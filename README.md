@@ -69,3 +69,15 @@ int main()
 //stdout
 {configurations:[{IMode:"gdb", args:[], environment:[], externalConsole:true, miDebuggerPath:"D:\\mingw-w64\\bin\\gdb.exe", name:"g++.exe build and debug active file", preLaunchTask:"g++.exe build active file", program:"${fileDirname}\\${fileBasenameNoExtension}", request:"launch", setupCommands:[{description:"Enable pretty-printing for gdb", ignoreFailures:false, text:"-enable-pretty-printing"}], stopAtEntry:false, type:"cppdbg", wd:"${workspaceFolder}"}], version:"0.2.0"}
 ```
+## tips
+
+同时支持自行构造json类型，例如
+
+```C++
+    Json myJson=Json::object{
+    { "key1", "value1" },
+    { "key2", false },
+    { "key3", Json::array { 1, 2, 3 } },
+};
+```
+更多细节详见 json.hpp
