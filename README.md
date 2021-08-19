@@ -2,8 +2,8 @@
 
 - 不同类型的Json继承自基类JsonValue
 - Json类中包含指向JsonValue的智能指针，通过多态机制统一管理不同类型的JsonValue
-- array类型的JsonArray使用std::vector<Json>管理
-- object类型的JsonObject使用std::map<std::string,Json>管理
+- array类型的JsonArray使用std::vector\<Json\>管理
+- object类型的JsonObject使用std::map\<std::string,Json\>管理
 - 采用递归下降解析方式
 - 使用智能指针管理资源
 - 使用右值引用减少对象拷贝开销
